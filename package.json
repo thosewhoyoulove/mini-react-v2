@@ -1,0 +1,11 @@
+{
+  "name": "mini-react",
+  "version": "1.0.0",
+  "description": "Educational mini React with Fiber, Hooks, and Scheduler",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/dev-server.mjs",
+    "test": "node scripts/test-render.mjs"
+  },
+  "private": true
+}

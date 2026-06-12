@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini React — Fiber / Hooks / Scheduler</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        max-width: 640px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        background: #0f172a;
+        color: #e2e8f0;
+      }
+      h1 { color: #61dafb; font-size: 1.25rem; }
+      .counter {
+        background: #1e293b;
+        border-radius: 12px;
+        padding: 1.5rem;
+        border: 1px solid #334155;
+      }
+      button {
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 6px;
+        background: #61dafb;
+        color: #0f172a;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      button:hover { filter: brightness(1.1); }
+      .hint {
+        margin-top: 2rem;
+        font-size: 0.875rem;
+        color: #94a3b8;
+        line-height: 1.6;
+      }
+      code { background: #334155; padding: 0.1em 0.35em; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <p class="hint">
+      打开开发者工具 Console，点击 <code>+1</code> 可看到
+      <code>useEffect</code> 日志。源码在 <code>src/</code> 目录，按模块阅读：
+      fiber → hooks → scheduler → reconciler → renderer。
+    </p>
+    <script type="module" src="./src/example.js"></script>
+  </body>
+</html>
